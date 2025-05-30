@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Nutrition Assistant</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title id="title">Nutrition Assistant</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🥗 Nutrition AI Assistant</h1>
-  <input type="text" id="userInput" placeholder="Ask a nutrition question..." />
-  <button onclick="askAI()">Ask</button>
-  <div id="responseText"></div>
-  <script src="script.js"></script>
+    <div class="app-container">
+        <h1 id="title-text">Nutrition Assistant</h1>
+        <select id="langSelect">
+            <option value="en">English</option>
+            <option value="he">עברית</option>
+        </select>
+        <button id="themeToggle">🌓 Toggle Theme</button>
+        <textarea id="askInput" placeholder="Ask something..."></textarea>
+        <button id="sendBtn">Send</button>
+        <div id="responseArea"></div>
+        <h2>📊 Your Saved Tips</h2>
+        <ul id="tipList"></ul>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
